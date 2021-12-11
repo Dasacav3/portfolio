@@ -4,7 +4,7 @@
   "description": "This is the website of all projects and main page of Dasacav3",
   "main": "app.js",
   "scripts": {
-    "build": "npx tailwind -i src/css/main.css -o public/css/main.css",
+    "build:css": "postcss src/css/main.css -o public/css/main.css",
     "start": "node app.js"
   },
   "repository": {
@@ -25,11 +25,15 @@
   },
   "homepage": "https://github.com/Dasacav3/portfolio#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2"
   },
   "devDependencies": {
     "tailwindcss": "^3.0.1"
