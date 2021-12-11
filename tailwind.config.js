@@ -1,6 +1,8 @@
 module.exports = {
-	purge: [],
-	darkMode: false, // or 'media' or 'class'
+	content: [
+    "./views/*.ejs", 
+    "./views/**/*.ejs"
+  ],
 	theme: {
 		extend: {
 			colors: {
@@ -25,9 +27,6 @@ module.exports = {
 				raleway: ["Raleway", "sans-serif"],
 			},
 		},
-	},
-	variants: {
-		extend: {},
 	},
 	plugins: [],
 };
