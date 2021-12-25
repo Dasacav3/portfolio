@@ -1,0 +1,47 @@
+<%- include('templates/head',{title: 'Proyectos' }) %>
+
+<div class="font-raleway bg-midnight_blue text-white flex w-full flex-col">
+	<%- include('templates/navbar', {menu: 'text-teal-400' }) %>
+</div>
+
+<div class="m-auto container flex items-center flex-col">
+	<h1 class="text-center text-3xl font-bold my-8">Proyectos</h1>
+	<div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4">
+		<% arrayProjects.forEach(project => { %>
+			<div>
+				<div class="max-w-sm rounded overflow-hidden shadow-lg">
+					<div class="flex justify-center">
+						<img src="<%= project.image %>" style="width: 350px;height: 250px;object-fit: contain;" />
+					</div>
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl mb-2"><%= project.title %></div>
+						<p class="text-gray-700 text-base"><%= project.description %></p>
+					</div>
+					<div class="px-6 pt-4 pb-2 text-gray-700">
+						<a href="<%= project.github %>" class="underline" target="blank">Visitar</a>
+					</div>
+					<div class="px-6 pt-4 pb-2">
+						<span
+							class="
+								inline-block
+								bg-gray-200
+								rounded-full
+								px-3
+								py-1
+								text-sm
+								font-semibold
+								text-gray-700
+								mr-2
+								mb-2
+							"
+						>
+							<%= project.topic %>
+						</span>
+					</div>
+				</div>
+			</div>
+		<% }) %>
+	</div>
+</div>
+
+<%- include('templates/footer') %>
