@@ -4,8 +4,10 @@
   "description": "This is the website of all projects and main page of Dasacav3",
   "main": "app.js",
   "scripts": {
+    "build:css-dev": "postcss src/css/main.css -o public/css/main.css --watch",
     "build:css": "postcss src/css/main.css -o public/css/main.css",
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
