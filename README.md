@@ -6,7 +6,7 @@ You can visit me on dasacav3dev.me
 
 Also, you can follow me in social networks:
 
-- Twitter: __@Dasacav3__
+- Twitter: __@Dasacav31__
 - Facebook: __@Dasacav3__
 - Instagram: __ __dasacav3__ __
 - Reddit: __@Dasacav3__
